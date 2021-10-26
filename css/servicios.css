@@ -1,0 +1,17 @@
+.grid-servicios{
+        display: grid;
+        grid-template-columns: repeat(auto, 1fr);
+        width: 90%;
+        max-width: 1170px;
+        height: 100%;
+        margin: auto;
+        gap: 1rem;
+        text-align: center;
+    
+}
+#servicios .step-wrapper p .red {
+    color: #00C5FF;
+    font-size: 18px;
+    vertical-align: baseline;
+    padding-right: 4px;
+}

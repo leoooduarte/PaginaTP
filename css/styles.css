@@ -1,0 +1,238 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Mirza', cursive; 
+font-family: 'ProximaNova-Regular', Arial, Helvetica;
+font-family: proxima-nova, sans-serif;*/
+*,*:after, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#conteneder-carga{
+    background-color: rgba(250, 240, 245, 0,9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #F4266A;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    background: transparent;
+}
+
+@font-face {
+    font-family: ProximaNova-Extrabold;
+    src: url(fonts/FontsFree-Net-Proxima-Nova-Xbold-It.otf);
+}
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url(fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf);
+}
+
+header{
+    background: rgb(78,72,196);
+    background: linear-gradient(90deg, rgba(78,72,196,1) 0%, rgba(33,30,237,1) 12%, rgba(101,101,209,1) 34%, rgba(0,212,255,1) 100%);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    max-width: 1170px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.grid-vertical{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        gap: 1rem;
+        align-items: center;
+}
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(12,auto);
+    background-color: #436794;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+}
+
+#logo{
+    width: 4rem;
+    height: 3.5rem;
+}
+#nombre-empresa{
+    font-family: 'Mirza', cursive;
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 2/6;
+}
+
+#nombre-empresa h1{
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#navegacion{
+    grid-column: 7/12;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica;
+    color: rgb(66, 48, 48);
+    padding: 0px 22px 0px 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: white;
+}
+
+#menu-navegacion{
+    grid-column: 12/12;
+}
+#img-presentacion{
+    width: 100%;
+    height: 45rem;
+    opacity: 0.8;
+}
+
+#nosotros h2{ 
+    font-family: 'ProximaNova-Extrabold', Arial, Helvetica;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+}
+
+#nosotros h3{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+#nosotros{
+    background-image: url(../img/depositphotos_86091950-stock-photo-air-conditioner-on-wall-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.descripcion p{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    line-height: 1.6;
+    margin: auto;
+    margin-bottom: auto;
+    max-width: 550px;
+}
+
+.email{
+    grid-column: 8/9;
+    
+}
+
+.celular-contacto{
+  grid-column: 10/12;
+  text-align: center;
+}
+.lista-footer{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-footer{
+        display: flex;
+        flex-direction: column;
+        height: 18vh;
+    }
+    .grid-vertical{
+        display: flex;
+        flex-direction: column;
+    }
+    footer #nombre-empresa h1{
+        font-size: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media all and (min-width:10px) and (max-width:599px){
+    h1{
+        font-size: 2rem;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-footer{
+        display: flex;
+        flex-direction: column;
+        height: 18vh;
+    }
+    .grid-vertical{
+        display: flex;
+        flex-direction: column;
+    }
+    footer #nombre-empresa h1{
+        font-size: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}

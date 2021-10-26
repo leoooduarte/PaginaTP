@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios & Contacto DGS</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@1&family=Mirza:wght@700&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90da2a0c59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <header>
+        <nav class="grid">
+            <div id="marca">
+                <a href="index.html">
+                <img id="logo" src="../img/logo.png" alt="Imagen Logo">
+                </a>
+            </div>
+            <div id="nombre-empresa">
+                <h1>DESARROLLO Y GESTIÓN DE SERVICIOS</h1>
+            </div>
+            <div id="navegacion">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Empresa</a></li>
+                    <li><a href="contacto.html">Servicios</a></li>
+                    <li><a href="#contact-us">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="menu-navegacion">
+                <a id="menu-trigger" href="">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>  
+    </header>
+
+    <section id="servicios">
+        <div class="grid-servicios">
+  
+           <h2>Servicios</h2>
+           <h3>Vea nuestro listado de servicios</h3>
+  
+              <div class="step-wrapper">
+                 <div class="icon-servicio">
+                    <img src="../img/ic-aire.png">
+                 </div>
+                 <div class="step-content">
+                    <h4>AIRES ACONDICIONADOS</h4>
+                    <h5>Atención al público, comercios y empresas.</h5>
+                </div>
+                 <p>
+                    <span class="red">•</span> Instalación de equipos.<br>
+                    <span class="red">•</span> Reparación de aires.<br>
+                    <span class="red">•</span> Cargas de aires acondicionados.<br>
+                    <span class="red">•</span> Conversión de aires.<br>
+                    <span class="red">•</span> Mantenimiento de aires.
+                 </p>
+              </div>
+           
+              <div class="step-wrapper">
+                 <div class="icon-servicio">
+                    <img src="../img/ic-calefaccion.png">
+                 </div>
+                 <div class="step-content">
+                   <h4>CALEFACCIÓN</h4>
+                   <h5>Service completo de calefacción.</h5>
+                 </div>
+                 <p>
+                    <span class="red">•</span> Servicio técnico en calderas.<br>
+                    <span class="red">•</span> Servicio técnico de calefacción.<br>
+                    <span class="red">•</span> Mantenimiento de calderas.<br>
+                    <span class="red">•</span> Sistemas centrales.<br>
+                    <span class="red">•</span> Calefacción central.
+                 </p>
+              </div>
+             
+              <div class="step-wrapper">
+                 <div class="icon-servicio">
+                    <img src="../img/ic-conducto.png">
+                 </div>
+                 <div class="step-content">
+                    <h4>CONDUCTOS</h4>
+                    <h5>Diferentes tipos de servicios.</h5>
+                 </div>
+                 <p>
+                    <span class="red">•</span> Instalación y mantenimiento.<br>
+                    <span class="red">•</span> Ventilación forzada.<br>
+                    <span class="red">•</span> Aire acondicionado por conducto.<br>
+                    <span class="red">•</span> Calefacción por conductos.<br>
+                    <span class="red">•</span> Cálculos de renovación.
+                  </p>
+              </div>
+           
+              <div class="step-wrapper">
+                 <div class="icon-servicio">
+                    <img src="../img/ic-envios.png">
+                 </div>
+                 <div class="step-content">
+                    <h4>ENVÍOS<br> A DOMICILIO</h4>
+                    <h5>Envío en 72 horas en CABA.</h5>
+                 </div>
+                 <p>
+                    <span class="red">•</span> Aires acondicionados. <br>
+                    <span class="red">•</span> Equipos industriales.<br>
+                    <span class="red">•</span> Sistemas VRV LG.<br>
+                    <span class="red">•</span> Conductos de ventilación.<br>
+                    <span class="red">•</span> Extractores de aire.
+                 </p>
+  
+              </div>
+             
+        </div>
+     </section>
+
+    <section class="inner contact">
+        <!-- Form Area -->
+        <div class="contact-form">
+            <!-- Form -->
+            <form id="contact-us" method="post" action="#">
+                <!-- Left Inputs -->
+                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                    <!-- Name -->
+                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                    <!-- Email -->
+                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                    <!-- Subject -->
+                    <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                </div><!-- End Left Inputs -->
+                <!-- Right Inputs -->
+                <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                    <!-- Message -->
+                    <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                </div><!-- End Right Inputs -->
+                <!-- Bottom Submit -->
+                <div class="relative fullwidth col-xs-12">
+                    <!-- Send Button -->
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                </div><!-- End Bottom Submit -->
+                <!-- Clear -->
+                <div class="clear"></div>
+            </form>
+
+            <!-- Your Mail Message -->
+            <div class="mail-message-area">
+                <!-- Message -->
+                <div class="alert gray-bg mail-message not-visible-message">
+                    <strong>Thank You !</strong> Your email has been delivered.
+                </div>
+            </div>
+
+        </div><!-- End Contact Form Area -->
+    </section><!-- End Inner -->
+
+    
+
+    <footer class="grid-footer">
+        <div>
+            <a href="index.html">
+                <img id="logo" src="../img/logo.png" alt="Imagen Logo">
+            </a>
+        </div>
+
+        <div id="nombre-empresa">
+            <h1>DESARROLLO Y GESTIÓN DE SERVICIOS</h1>
+        </div>
+
+        <div>
+            <ul class="lista-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#nosotros">Empresa</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="lista-footer">
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="email">
+            <ul class="lista-footer">
+                <li><a href="mailto:climasistemas@hotmail.com"><i class="fas fa-envelope"></i> climasistemas@hotmail.com</a></li> <br>
+                <li><a href="https://goo.gl/maps/5W4cBujZPnAeW2U97" target="_blank"><i class="fas fa-map-marked"></i> Av. Rivadavia 3548 CABA</a></li> <br>
+            </ul>
+        </div>
+
+        <div class="celular-contacto">
+            <ul class="lista-footer">
+                <li><a href="https://wa.me/+541161315968" target="_blank"><i class="fab fa-whatsapp"></i> +54 11 6131-5968</a></li>
+                <li><a href="https://wa.me/+541153011585" target="_blank"><i class="fab fa-whatsapp"></i> +54 11 5301-1585</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="../js/mains.js"></script>
+    
+</body>
+</html>
