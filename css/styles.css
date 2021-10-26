@@ -51,7 +51,9 @@ font-family: proxima-nova, sans-serif;*/
     padding: 0;
 }
 
-body{
+html, body{
+    width: 100%;
+    overflow-x: hidden;
     color: black;
     font-family: 'Roboto', sans-serif;
     background: transparent;
